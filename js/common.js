@@ -1,3 +1,6 @@
+
+
+
 const navSlide = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
@@ -21,13 +24,16 @@ const navSlide = () => {
   });
 
 }
-
 navSlide();
 
-document.body.style.position = 'fixed';
-document.body.style.top = `=${window.scrollY}`;
+function scrollAppear() {
+  var card-content = document.querySelector('.card-content');
+  var introPosition = introText.getBoundingClientRect().top;
+  var screenPosition = window.innerHeight / 1.3;
 
-const scrollY = document.body.style.top;
-document.body.style.position = '';
-document.body.style.top = '';
-window.scrollTo(0, parseInt(scrollY || '0') * -1);
+  if(introPosition < screenPosition) {
+    introText.classList.add('intro-appear');
+  }
+}
+
+  window.addEventListener('scroll', scrollAppear);
