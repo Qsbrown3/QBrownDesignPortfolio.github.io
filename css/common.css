@@ -28,10 +28,12 @@ nav {
   overflow: hidden;
   height: 80vh;
   background-color: #fcfcfc;
+
 }
 
 .nav-links {
-  position: absolute;
+  position: fixed;
+  z-index: 1;
   justify-content: left;
   width: 100%;
   right: 0px;
@@ -42,6 +44,8 @@ nav {
   align-items: center;
   transform: translateX(100%);
   transition: transform 0.7s ease-down;
+  top: 0;
+  border: 1px solid green;
 
 }
 
@@ -69,6 +73,12 @@ nav {
     transform: translateX(0px);
 
   }
+}
+
+.toggle {
+  position: fixed;
+  z-index: 1;
+  right: 1.5rem;
 }
 
 .toggle .line1 {
