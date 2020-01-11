@@ -26,9 +26,8 @@ nav {
   align-items: flex-start;
   width: auto;
   overflow: hidden;
-  height: 80vh;
+  height: 60vh;
   background-color: #fcfcfc;
-
 }
 
 .nav-links {
@@ -140,11 +139,17 @@ p {
 #section-a {
   display: flex;
   justify-content: flex-start;
+  border: 1px solid green;
+  padding-top: 0;
+  margin-bottom: 0px;
+  height:
 }
 
 .projects {
   display: flex;
   justify-content: space-between;
+  border: 1px solid green;
+
 }
 
 .arrow {
@@ -171,9 +176,16 @@ p {
 }
 
 .cardContent {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(20px);
   transition:all 0.5s all ease-in-out;
+}
+
+.cardContent:hover {
+  transform: scale(1.05);
+  transition-timing-function: ease-in-out;
+  transition-duration: 2s;
+
 }
 
 .cardContent.active {
@@ -218,6 +230,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 2;
+  }
+
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
   }
 
   .card-content {
