@@ -47,14 +47,22 @@ nav {
   top: 0;
 }
 
+ul {
+  padding-top: 50px;
+}
+
 .nav-links li {
   opacity: 1;
-  padding: 40px;
   margin-top: 60px;
 }
 
+li {
+  padding: 20px;
+}
+
 .QB {
-  z-index: 2;
+  z-index: 2
+  position: fixed;
 }
 
 .burger {
@@ -153,7 +161,7 @@ p {
   width: 100%
 }
 
-.card-content {
+.cardContent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -162,13 +170,13 @@ p {
   margin-bottom: 1.5em;
 }
 
-.card-content {
-  opacity: 1;
+.cardContent {
+  opacity: 0;
   transform: translateY(20px);
-  transition: 0.5s all ease-in-out;
+  transition:all 0.5s all ease-in-out;
 }
 
-.intro-appear {
+.cardContent.active {
   opacity: 1;
   transform: translateY(0px);
 }
