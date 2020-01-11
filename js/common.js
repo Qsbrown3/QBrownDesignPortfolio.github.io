@@ -25,15 +25,3 @@ const navSlide = () => {
 
 }
 navSlide();
-
-function scrollAppear() {
-  var card-content = document.querySelector('.card-content');
-  var introPosition = introText.getBoundingClientRect().top;
-  var screenPosition = window.innerHeight / 1.3;
-
-  if(introPosition < screenPosition) {
-    introText.classList.add('intro-appear');
-  }
-}
-
-  window.addEventListener('scroll', scrollAppear);
