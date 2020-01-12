@@ -177,22 +177,22 @@ p {
 }
 
 .cardContent {
-  opacity: 1;
-  transform: translateY(20px);
-  transition:all 0.5s all ease-in-out;
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s ease-out;
 }
 
-.cardContent:hover {
+.change.fadein {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+/*.cardContent:hover {
   transform: scale(1.05);
   transition-timing-function: ease-in-out;
   transition-duration: 2s;
-
 }
-
-.cardContent.active {
-  opacity: 1;
-  transform: translateY(0px);
-}
+*/
 
 .card-title {
   padding: 0px;

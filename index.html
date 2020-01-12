@@ -7,23 +7,17 @@
     <title>Portfolio Design</title>
 
     <link rel="stylesheet" href="css/common.css">
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js">
-
-    </script>
   </head>
 
   <body>
-<!-- Preloader -->
-
-
 <!-- Navigation -->
     <nav>
       <div class="QB">
-        <img class="logo" src="images/Logo22.svg" alt="">
+        <img class="logo" src="images/logo.gif" style="max-width:60px">
       </div>
       <ul class="nav-links">
         <li class="info">
@@ -48,7 +42,7 @@
 
     <!-- Introduction Showcase -->
       <header id="showcase" class="">
-        <p class="intro">  HI!  <br> My name is Qasim Brown <br>
+        <p class="intro">  Hey there!  <br> My name is Qasim Brown <br>
           and I'm a <strong>UX DESIGNER</strong> based in
           Houston, Tx.  I find creative solutions
           that create user-friendly designs.</p>
@@ -68,7 +62,7 @@
           <ul class="grid">
             <li>
               <div class="card img-1">
-                <div class="cardContent">
+                <div class="cardContent change">
                   <img class="image" src="images/mobileTwo.svg" style="max-width: 500px">
                   <h3 class="card-title">Cursive UX Design</h3>
                   <h4>Case Study</h4>
@@ -117,48 +111,11 @@
           </div>
         </section>
 
-
+    <script src="jquery-3.4.2.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/fadein.js"></script>
 
-    <script>
-      function debounce(func, wait = 20, immediate = true) {
-        var timeout;
-        return function() {
-          var context = this, args = arguments;
-          var later = function() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
-        };
-      };
 
-      const sliderImages = document.querySelectorAll('.cardContent');
-
-      function checkSlide(e) {
-        sliderImages.forEach(sliderImage => {
-          // halfway through the image
-          const slideInAt = (window.scrollY + window.innerHeight) - sliderImage.height / 2;
-          // bottom of the image
-          const imageBottom = sliderImage.offsetTop + sliderImage.height;
-
-          const isHalfShown = slideInAt > sliderImage.offsetTop;
-          const isNotScrolledPast = window.scrollY < imageBottom;
-          if(isHalfShown && isNotScrolledPast) {
-            sliderImage.classList.add('active');
-          } else {
-            sliderImage.classList.remove('active');
-          }
-
-        });
-      }
-
-      window.addEventListener('scroll', debounce(checkSlide));
-
-    </script>
 
 
   </body>
