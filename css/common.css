@@ -182,7 +182,7 @@ p {
   transition: all 1s ease-out;
 }
 
-.change.fadein {
+.cardContent.visible {
   opacity: 1;
   transform: translate(0, 0);
 }

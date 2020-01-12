@@ -9,7 +9,7 @@ $(document).on("scroll", function () {
     if ($(tag).position().top < pageBottom) {
       $(tag).addClass("visible")
     } else {
-      $(tag).removeClass("cardContent")
+      $(tag).removeClass("visible")
     }
   }
 })
