@@ -178,8 +178,8 @@ p {
 
 .cardContent {
   opacity: 0;
-  transform: translate(0, 20px);
-  transition: all 1s ease-out;
+  transform: translate(0, 30px);
+  transition: all 1.9s ease-out;
 }
 
 .cardContent.visible {
@@ -187,12 +187,14 @@ p {
   transform: translate(0, 0);
 }
 
-/*.cardContent:hover {
+.cardContent:hover {
+  position: relative;
+  cursor: pointer;
   transform: scale(1.05);
   transition-timing-function: ease-in-out;
-  transition-duration: 2s;
+  transition-duration: 1s;
 }
-*/
+
 
 .card-title {
   padding: 0px;
