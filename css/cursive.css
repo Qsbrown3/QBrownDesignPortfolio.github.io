@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Preloader */
+
+/* Core Styles */
+body {
+  font-family: Poppins;
+  background: #fcfcfc;
+  color: #000;
+  font-size: 1em;
+  line-height: 1.5;
+
+  width: 100%;
+
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #111111;
+}
+
+/* Nav Styles*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  overflow: hidden;
+  height: 60vh;
+  background-color: #fcfcfc;
+  margin: 5%;
+}
+
+.nav-links {
+  position: fixed;
+  z-index: 1;
+  justify-content: left;
+  width: 100%;
+  right: 0px;
+  height: 50vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(100%);
+  transition: transform 0.7s ease-down;
+  top: 0;
+}
+
+nav ul {
+  padding-top: 50px;
+}
+
+.nav-links li {
+  opacity: 1;
+  margin-top: 60px;
+}
+
+nav li {
+  padding: 20px;
+}
+
+.QB {
+  z-index: 2
+  position: fixed;
+}
+
+.burger {
+  display: block;
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+
+  }
+}
+
+.toggle {
+  position: fixed;
+  z-index: 1;
+  right: 5%;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.nav-links a {
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+html {font-size: 100%;} /*16px*/
+
+/*
+.chapter-header {
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 600;
+  height: 150px;
+}
+
+.chapter-header li {
+  padding: 0px;
+}
+
+.section-header {
+  f
+}
+
+.text {
+
+}
+
+.colored-heading {
+  font-size: 34px;
+  line-height: 40px;
+  color: #6DB37F;
+}
+
+
+/* Body Style */
+.main {
+
+}
+
+/* Introduction Styles
+.introduction {
+  padding-left: 25%;
+  padding-right: 25%;
+
+}
+
+.solutions {
+  padding: 0 5%;
+}
+
+.solutions-container {
+
+}
+
+/* Intro Style */
+.section {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.main-title {
+  font-size: 24px;
+  line-height: 26px;
+  text-align: center;
+  font-weight: 600;
+  height: 150px;
+  padding-bottom: 0px;
+}
+
+.subheading {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  padding-top: 30px;
+}
+
+.info {
+  padding-top: 10px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: lighter;
+}
+
+.coloredText {
+    font-size: 22px;
+    line-height: 24px;
+    color: #6DB37F;
+    padding-top: 20px;
+}
+
+.role {
+  padding-right: 10%;
+  padding-left: 10%;
+  padding: 10%;
+}
+
+.specifics {
+  padding-bottom: 20px;
+}
+
+.team {
+  padding-bottom: 30px;
+}
+
+.dashboard-view {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.evidence-container {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 80px;
+}
+
+.evidence-box {
+
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 12px;
+  margin: auto;
+
+}
+
+.evidence-link {
+  border: 1px solid green;
+  padding: 10px;
+  margin: 20px;
+background-color: #EFEAD6;
+}
+
+.evidence1 {
+  padding-top: 2px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+.image {
+  width: 100%;
+}
+
+
+/* IDEA: Competitive Analysis */
+.structure {
+
+}
+
+.analysisOfCompetitors .title {
+  font-size: 20px;
+  padding-left: 10%;
+}
+
+.competitors {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.competitors ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.competitor-photo {
+  width: 100%;
+}
+
+.competitor-photo 2 {
+  padding-left: 20px;
+}
+
+
+/* IDEA: Takeaways */
+
+#card {
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+
+}
+
+.boxed-paragraph {
+  background-color: #EBE5CE;
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+}
+
+.highlights {
+  width:
+  padding-left: px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.questions {
+  padding-top: 20px;
+  margin-left: 10%;
+}
+
+.statement {
+  padding-top: 40px;
+}
+.highlight-item {
+  width: 100px;
+}
+
+
+
+
+.team {
+height: 20px;
+padding-top: 2px;
+margin-top: 1px;
+}
+
+.team h2 {
+  font-size: 20px;
+}
+
+.oversize {
+  color: #fefefe;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+/* Personas */
+.cursive {
+  padding-top: 80px;
+}
+
+.quotemarks {
+  font-size: 40px;
+}
+.supersize {
+  font-size: 36px;
+  line-height: 38px;
+}
+/*==========================================================*/
+
+.solo {
+height: 10px;
+}
+
+.solo h3 {
+  font-size: 14px;
+  height: 10px;
+  padding-top: 20px;
+}
+
+
+
+/*  Introduction Style */
+
+.container1 {
+  width: 100%;
+}
+.section-introduction {
+  margin: 0;
+  padding: 10%;
+  background-color: #EBE5CE;
+}
+
+/*  Summary */
+
+.part {
+  padding-top: 20px;
+}
+
+.process {
+  padding-top:
+  width: 100%;
+}
+
+.one {
+  text-align: center;
+}
+
+.research {
+  height: 40vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* IDEA: Process */
+.research {
+  height: 40vh;
+}
+
+/* IDEA: Survey highlights */
+.three {
+  padding-top: 3px;
+}
+
+.two {
+  padding-top: 0px;
+}
+
+.highlights {
+  padding-top: 0px;
+}
+
+.highlight-item {
+  padding-bottom: 40px;
+  text-align: left;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.highlight-item h1 {
+  margin-bottom: 0px;
+}
+
+.highlight-item h3 {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* IDEA: Survey analysis */
+.text {
+    padding-bottom: 0px;
+
+}
+
+.survey-analysis {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+
+
+
+/* IDEA: User Flows */
+.flows {
+  padding: 10%;
+}
+
+.image {
+  padding-top: 10%;
+}
+
+/* IDEA: Sketches */
+.text {
+
+}
+
+
+/* IDEA: Refined dashoabord
+.dashboard .title {
+  padding-top: 0px;
+  padding-left: 10%;
+}
+
+
+.titles {
+  padding-left: 10%;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+  .highlights {
+    width: 100px;
+  }
+
+  .highlight-item {}
+}
+
+
+
+
+
+
+/* IDEA: Responsive Screens*/
+
+@media only screen and (min-width: 600px) {
+  nav {
+    height: 20vh;
+  }
+
+  .section {
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+  /* Solutions
+  .solutions-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .chapter {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .solution {
+    width: 300px;
+  }
+
+  .team {
+    width: 250px;
+    padding-left: px;
+  }
+
+*/
+
+.role {
+  padding-right: 25%;
+  padding-left: 25%;
+  padding: ;
+}
+
+.summary {
+  padding-bottom: 20px;
+}
+
+.team {
+  padding-bottom: 30px;
+
+}
+
+.containerForSolution {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.evidence1 {
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.dashboard-view {
+  width: 60%;
+}
+
+#solution-text {
+  padding-left: 30px;
+}
+
+
+#card {
+  padding: %;
+  padding-left: 25%;
+  padding-right: 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+  /* Introduction Styles */
+  .container1 {
+    display: flex;
+    justify-content: center;
+  }
+/*
+  .section-introduction {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .problem {
+    width: 45%;
+  }
+
+  .solution {
+    width: 45%;
+    margin-left: 40px;
+  }
+
+  /* IDEA: Process */
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .research {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .survey {
+    margin-left: 50px;
+    padding-top: 10px;
+  }
+
+  .thoughts {
+    height: 10vh;
+  }
+
+
+/* IDEA: Survey highlights */
+.three {
+  padding-bottom: 0px;
+  padding-top: 3px;
+}
+
+.container2 {
+  padding-top: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.highlights {
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.highlight-item {
+  padding-bottom: 40px;
+  text-align: left;
+  width: 150px;
+}
+
+.highlight-item h1 {
+  margin-bottom: 0px;
+}
+
+.highlight-item h3 {
+  font-size: 14px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+.competitor-photo {
+  width: 75%;
+}
+
+
+}

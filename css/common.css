@@ -29,7 +29,15 @@ nav {
   height: 60vh;
   background-color: #fcfcfc;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .nav-links {
+  padding-top: 60px;
+}
 .nav-links {
   position: fixed;
   z-index: 1;
