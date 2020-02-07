@@ -7,13 +7,15 @@
 /* Preloader */
 
 /* Core Styles */
+
+
 body {
-  font-family: Poppins;
+  font-family: 'Poppins', sans-serif;
   background: #fcfcfc;
-  color: #000;
+  color: #111111;
   font-size: 1em;
   line-height: 1.5;
-  margin: 5%;
+
 }
 
 .logo {
@@ -26,8 +28,9 @@ nav {
   align-items: flex-start;
   width: auto;
   overflow: hidden;
-  height: 60vh;
+  height: 50vh;
   background-color: #fcfcfc;
+    margin: 5%;
 }
 .sticky {
   position: fixed;
@@ -134,12 +137,16 @@ h1, h2, h3 {
 }
 
 #showcase {
-
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 0px;
+
 }
+
 
 p {
   font-size: 1.5em;
+  font-height: 2.8em;
   font-weight: lighter;
 }
 
@@ -150,15 +157,19 @@ p {
   padding-top: 0;
   margin-bottom: 0px;
   height:
+  padding-right: 10%;
 }
 
 .projects {
   display: flex;
   justify-content: space-between;
+  padding-left: 10%;
+  padding-right: 10%;
 }
+
 .title {
   font-size: 1.1em;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .arrow {
@@ -175,6 +186,7 @@ p {
   width: 100%
 }
 
+
 .cardContent {
   display: flex;
   justify-content: center;
@@ -187,7 +199,7 @@ p {
 .cardContent {
   opacity: 0;
   transform: translate(0, 30px);
-  transition: all 1.9s ease-out;
+  transition: all 1.2s ease-in-out;
 }
 
 .cardContent.visible {
@@ -205,7 +217,28 @@ p {
 
 
 .card-title {
-  padding: 0px;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  weight: 500px;
+}
+
+.lower-title {
+  padding-bottom: 5px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #a1a1a1;
+}
+
+.content-title {
+  font-size: 20px;
+  line-height: 45px;
+  color: #b4b4b4;
+}
+
+#main-footer {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 @media only screen and (min-width: 600px) {
@@ -217,15 +250,13 @@ p {
     padding-top: 200px;
   }
 
+
   p {
-    font-family: Poppins;
-    font-weight: normal;
-    background: #fcfcfc;
-    color: #000;
-    font-size: 1.9em;
-    font-family: .5em;
-    line-height: 1.5;
+    font-size: 34px;
+    line-height: 54px;
     margin: auto;
+    font-weight: 400;
+
   }
 
   .projects {
@@ -234,6 +265,15 @@ p {
   }
 
 
+  #section-b {
+    display: flex;
+    justify-content: center;
+  }
+
+.cardContent {
+  width: 600px;
+}
+/*
 
   .grid {
     display: grid;
@@ -248,6 +288,5 @@ p {
   }
 
   .card-content {
-    margin-right: 1.5em;
   }
 }
