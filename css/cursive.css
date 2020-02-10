@@ -6,9 +6,9 @@
 
 /* Preloader */
 
-/* Core Styles */
+/* Core Styles
 body {
-  background: #fff;
+
   color: #000;
   font-size: 1em;
   line-height: 1.5;
@@ -16,8 +16,67 @@ body {
   margin: ;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
+
+
+}
+/*********************************FONTS*************************************/
+html {font-size: 100%;} /*16px*/
+
+body {
+  background: #fff;
+  font-weight: 400;
+  line-height: 1.65;
   color: #111111;
 }
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5, h6 {
+  /*margin: 2.75rem 0 1.05rem;*/
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.3em;
+  line-height: 3.417em;
+  color: #b4b4b4;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.8em;
+  font-weight: 700;
+  padding-top: 10%;
+}
+
+h4 {
+  font-size: 1.5em;
+  line-height: 2.8em;
+  font-weight: 600;
+  color: #a1a1a1;
+
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+/*********************************FONTS*************************************/
+
+
 .word {
   text-decoration: none;
 }
@@ -140,10 +199,6 @@ ul {
 }
 
 
-
-html {font-size: 100%;} /*16px*/
-
-}
 /*-------------------------------------Landing Page-------------------------------------------------*/
 
 .landing-container {
@@ -189,21 +244,13 @@ html {font-size: 100%;} /*16px*/
 }
 
 .main-title {
-  font-size: 24px;
-  line-height: 26px;
   text-align: center;
-  font-weight: 600;
-  height: 150px;
-  padding-bottom: 10vh;
   padding-top: 15vh;
 }
 
-.subheading {
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 400;
-  padding-bottom: 10px;
-  padding-top: 30px;
+.main-title2 {
+  text-align: center;
+  padding-top: 10%;
 }
 
 
@@ -214,7 +261,7 @@ html {font-size: 100%;} /*16px*/
 }
 
 .evidence1 {
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 .coloredText {
@@ -234,12 +281,6 @@ html {font-size: 100%;} /*16px*/
   font-size: 16px;
   line-height: 18px;
   color: #BACCD8;
-}
-
-.text .questions {
-  font-size: 14px;
-  line-height: 28px;
-  font-weight: lighter;
 }
 
 
@@ -302,6 +343,7 @@ html {font-size: 100%;} /*16px*/
   list-style-position: outside;
   list-style-type: square;
   padding-left: 10%;
+
 }
 
 
@@ -328,13 +370,12 @@ a {
 .competitors {
   display: flex;
   justify-content: center;
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 
 .competitors ul {
   display: flex;
   justify-content: space-between;
+
 }
 
 .competitor-photo {
@@ -353,9 +394,7 @@ a {
 
 
 /* IDEA: Takeaways */
-.subheading {
-  padding-top: 20vh;
-}
+
 
 #card {
   padding-top: 5%;
@@ -369,7 +408,7 @@ a {
 }
 
 .section-introduction {
-  margin: 0;
+  padding-top: 10%;
   padding: 10%;
   background-color: #E3E8F1;
   border-left: 15px solid #A7C6DA;
@@ -378,6 +417,7 @@ a {
 .section {
 }
 
+/*
 .boxed-paragraph {
   background-color: #E3E8F1;
   padding: 4%;
@@ -385,7 +425,7 @@ a {
   justify-content: center;
   border-left: 15px solid #A7C6DA;
 }
-
+*/
 .highlights {
   width:
   padding-left: px;
@@ -394,12 +434,12 @@ a {
 }
 
 .questions {
-  padding-top: 30px;
-  margin-left: 10%;
+  /*padding-top: 30px;
+  margin-left: 10%;*/
 }
 
 .statement {
-  padding-top: 40px;
+  /*padding-top: 40px;*/
 }
 .highlight-item {
   width: 100px;
@@ -407,13 +447,10 @@ a {
 
 .team {
 height: 20px;
-padding-top: 2px;
-margin-top: 1px;
+/*padding-top: 2px;
+margin-top: 1px;*/
 }
 
-.team h2 {
-  font-size: 20px;
-}
 
 .oversize {
   color: #fefefe;
@@ -450,11 +487,11 @@ margin-top: 1px;
 height: 10px;
 }
 
-.solo h3 {
+/*.solo {
   font-size: 14px;
   height: 10px;
   padding-top: 20px;
-}
+}*/
 
 
 
@@ -468,7 +505,7 @@ height: 10px;
 /*  Summary */
 
 .part {
-  padding-top: 20px;
+  /*padding-top: 20px;*/
 }
 
 .process {
@@ -482,8 +519,8 @@ height: 10px;
 
 .research {
   height: 40vh;
-  padding-left: 10%;
-  padding-right: 10%;
+  /*padding-left: 10%;
+  padding-right: 10%;*/
 }
 
 /* IDEA: Process */
@@ -497,7 +534,7 @@ height: 10px;
 }
 
 .two {
-  padding-top: 0px;
+
 }
 
 /***********************Side Nav*****************************************/
@@ -531,46 +568,38 @@ height: 10px;
 
 
 /* IDEA: Survey analysis */
-.text {
-    padding-bottom: 0px;
 
-}
 
 .survey-analysis {
-  padding-top: 0px;
-  margin-top: 0px;
+  /*padding-top: 0px;
+  margin-top: 0px;*/
 }
 
 
 /*------------------Personas-------------------------------------------------*/
 
-.competitor-photo {
-  padding-top: 10vh;
-
-}
-
-.stories {
-  padding-top: 0px;
-}
-
-.extra {
-  padding-top: 40px;
-}
 
 .problems {
-  padding-top: 5vh;
+  /*padding-top: 5vh;*/
 }
 
 /* IDEA: User Flows */
 
+.chapter-hero {
+  width: 100%;
+  /*padding: 20px 10px 0px 10px;*/
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
 .userflow-view {
   width: 100%;
-  padding: 20px 10px 0px 10px;
-  pa
+  /*padding: 20px 10px 0px 10px;
+  padding-top: 10%;
+  padding-bottom: 10%;*/
+  padding: 5%;
 }
-.flows {
-  padding: %;
-}
+
 
 .image {
   padding-top: 10%;
@@ -579,7 +608,7 @@ height: 10px;
 
 /* IDEA: Sketches */
 .sketches {
-  margin-top: 10vh;
+  /*margin-top: 10vh;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -592,9 +621,6 @@ height: 10px;
   margin-bottom: 0px;
 }
 
-.text {
-
-}
 
 /*-------------------Quote Style------------------------------*/
 .quotemarks {
@@ -621,11 +647,11 @@ height: 10px;
 /*--------------Photo Stills--------------------------------------------*/
 
 .stills {
-  padding-left: 10px;
+
 }
 
 .still-image {
-  width: 90%;
+  width: 95%;
   padding-top: 10px;
 }
 
@@ -642,9 +668,6 @@ height: 10px;
   padding-left: 80px;
 }
 
-.dashboard-view {
-  width: 100%;
-}
 
 .notes {
   display: flex;
@@ -659,6 +682,24 @@ height: 10px;
   width: 80%;
 }
 
+
+.subheading {
+  padding-bottom: 0px;
+}
+
+.text {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.field {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.paragraph {
+  padding-top: 10%;
+}
 
 /* IDEA: Responsive Screens************************************************/
 
@@ -790,10 +831,10 @@ height: 10px;
   padding-top: 20px;
   padding-bottom: 0px;
 }
-
+/*
 .subheading {
   padding-top: 20vh;
-}
+}*/
 
 .stories {
   padding-top: 0;
@@ -911,6 +952,42 @@ height: 10px;
 .sketches {
 
 
+}
+
+/*
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+}
+
+h2 {
+  font-size: 2.441em;
+  line-height: 3.417em;
+  color: #b4b4b4;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 4em;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.125em;
+  line-height: 3em;
+  font-weight: 400;
+  color: #a1a1a1;
+}
+
+h5 {
+  font-size: 1.125em;
+  line-height: 2.25em;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 }
