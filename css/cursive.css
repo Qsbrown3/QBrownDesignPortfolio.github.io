@@ -57,9 +57,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
-  line-height: 2.8em;
-  font-weight: 600;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 400;
   color: #a1a1a1;
 
 }
@@ -74,6 +74,13 @@ h6 {
   font-size: 1em;
   line-height: 1.5em;
 }
+
+.team {
+  font-size: 1.7em;
+  color: #b4b4b4;
+  padding-top: 0px;
+}
+
 /*********************************FONTS*************************************/
 
 
@@ -92,8 +99,6 @@ nav {
   overflow: hidden;
 
   background-color: #E3E8F1;
-  margin: 1%;
-  margin-bottom: 1%;
   padding-top: 1%;
   text-shadow: 10px;
 }
@@ -202,7 +207,7 @@ ul {
 /*-------------------------------------Landing Page-------------------------------------------------*/
 
 .landing-container {
-  height: 130vh;
+  height: 70vh;
 }
 
 
@@ -266,8 +271,8 @@ ul {
 
 .coloredText {
     font-size: 22px;
-    line-height: 24px;
-    color: #376E93;
+    line-height: 26px;
+    color: #EE1C25;
     padding-top: 20px;
 }
 
@@ -276,13 +281,17 @@ ul {
 }
 
 .info {
-  padding-top: 10px;
-  padding-bottom: 8px;
-  font-size: 16px;
-  line-height: 18px;
-  color: #BACCD8;
+
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
 }
 
+.copy {
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
 
 .role {
   padding-right: 10%;
@@ -294,9 +303,6 @@ ul {
   padding-bottom: 20px;
 }
 
-.team {
-  padding-bottom: 30px;
-}
 
 .dashboard-view {
   width: 100%;
@@ -414,9 +420,10 @@ a {
   border-left: 15px solid #A7C6DA;
 }
 
-.section {
+.roles {
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
 /*
 .boxed-paragraph {
   background-color: #E3E8F1;
@@ -445,11 +452,6 @@ a {
   width: 100px;
 }
 
-.team {
-height: 20px;
-/*padding-top: 2px;
-margin-top: 1px;*/
-}
 
 
 .oversize {
@@ -708,6 +710,14 @@ height: 10px;
     height: 20vh;
   }
 
+
+  h4 {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight: 400;
+    color: #a1a1a1;
+
+  }
   .display-text {
     padding-top: 30%;
     text-align: center;
@@ -719,6 +729,11 @@ height: 10px;
   .section {
     padding-right: 25%;
     padding-left: 25%;
+  }
+
+  .roles {
+    padding-left: 25%;
+    padding-right: 25%;
   }
   /* Solutions
   .solutions-container {
@@ -741,14 +756,22 @@ height: 10px;
   }
 
 */
+
+
+.landing-container {
+  height: 100vh;
+}
+
 .landing-display {
   background-color: #E3E8F1;
   text-align: center;
 }
 
+
 .landing {
   height: 110vh;
 }
+
 
 .landing-page {
   width: 75%;
