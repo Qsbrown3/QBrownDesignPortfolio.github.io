@@ -31,7 +31,7 @@ body {
 
 p {margin-bottom: 1.15rem;}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .info, .copy, .coloredText {
   /*margin: 2.75rem 0 1.05rem;*/
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -274,6 +274,8 @@ ul {
     line-height: 26px;
     color: #EE1C25;
     padding-top: 20px;
+    font-weight: bold;
+    padding-bottom: 2%;
 }
 
 #solution-text {
@@ -285,6 +287,7 @@ ul {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
+  padding-bottom: 2%;
 }
 
 .copy {
@@ -298,11 +301,32 @@ ul {
   padding-left: 10%;
   padding: 10%;
 }
+.teamwork {
+  padding-top: 10%;
+}
+.work-role {
+  padding: 10px 10%;
+}
 
+.team {
+  padding-bottom: 1px;
+}
 .specifics {
   padding-bottom: 20px;
 }
 
+.role-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.role-menu {
+
+  display: flex;
+  justify-content: space-around;
+}
 
 .dashboard-view {
   width: 100%;
@@ -409,15 +433,11 @@ a {
 
 }
 
-.takeaways {
-  border-left: 15px solid #A7C6DA;
-}
-
 .section-introduction {
-  padding-top: 10%;
-  padding: 10%;
+  /*padding-top: 10%;*/
+  padding: 5%;
   background-color: #E3E8F1;
-  border-left: 15px solid #A7C6DA;
+  border-left: 10px solid #A7C6DA;
 }
 
 .roles {
@@ -790,19 +810,20 @@ height: 10px;
   padding-top: 30vh;
 }
 
-.role {
-  padding-right: 25%;
-  padding-left: 25%;
-  padding: ;
-}
+
 
 .summary {
   padding-bottom: 20px;
 }
 
-.team {
-  padding-bottom: 30px;
+/* IDEA: Roles */
+.teamwork {
+  padding: 10px 25%;
+}
 
+
+.team {
+  padding-bottom: 1px;
 }
 
 .containerForSolution {
@@ -916,22 +937,20 @@ height: 10px;
   padding-bottom: 0px;
   padding-top: 3px;
 }
-
+/*
 .container2 {
   padding-top: 20px;
   justify-content: center;
   display: flex;
 }
-
+*/
 .highlights {
-  padding-top: 0px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .highlight-item {
-  padding-bottom: 40px;
   text-align: left;
   width: 150px;
 }
