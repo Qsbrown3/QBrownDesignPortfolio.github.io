@@ -263,6 +263,7 @@ ul {
 /*-----------------------Classroom at a glance-------------------------------*/
 .overview {
   padding-bottom: 100px;
+
 }
 
 .evidence1 {
@@ -272,7 +273,7 @@ ul {
 .coloredText {
     font-size: 22px;
     line-height: 26px;
-    color: #EE1C25;
+    color: #DD9948;
     padding-top: 20px;
     font-weight: bold;
     padding-bottom: 2%;
@@ -435,9 +436,10 @@ a {
 
 .section-introduction {
   /*padding-top: 10%;*/
-  padding: 5%;
-  background-color: #E3E8F1;
-  border-left: 10px solid #A7C6DA;
+  padding: 5% 2%;
+
+  background-color: #FFFFE8;
+  border-left: 10px solid #DD9948;
 }
 
 .roles {
@@ -475,9 +477,10 @@ a {
 
 
 .oversize {
-  color: #fefefe;
-  font-size: 30px;
-  line-height: 33px;
+  color: #111111;
+  font-size: 40px;
+  line-height: 43px;
+  font-weight: 700;
 }
 
 /* Personas */
@@ -612,14 +615,16 @@ height: 10px;
   /*padding: 20px 10px 0px 10px;*/
   padding-top: 10%;
   padding-bottom: 10%;
+
 }
+
 
 .userflow-view {
   width: 100%;
   /*padding: 20px 10px 0px 10px;
   padding-top: 10%;
   padding-bottom: 10%;*/
-  padding: 5%;
+  padding: 2%;
 }
 
 
@@ -952,7 +957,7 @@ height: 10px;
 
 .highlight-item {
   text-align: left;
-  width: 150px;
+  width: 200px;
 }
 
 .highlight-item h1 {
@@ -991,10 +996,12 @@ height: 10px;
   width: 98%;
 }
 
-.sketches {
-
-
+.chapter-hero {
+  width: 100%;
+  height: auto;
+  min-height: 34rem;
 }
+
 
 /*
 h1 {
@@ -1031,5 +1038,5 @@ h6 {
   font-size: 1em;
   line-height: 1.5em;
 }
-
+*/
 }
