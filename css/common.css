@@ -15,7 +15,7 @@ body {
   color: #111111;
   font-size: 1em;
   line-height: 1.5;
-
+  padding-bottom: 10%;
 }
 
 .logo {
@@ -57,17 +57,14 @@ nav {
   top: 0;
 }
 
-ul {
-  padding-top: 50px;
-}
-
 .nav-links li {
   opacity: 1;
   margin-top: 60px;
 }
 
 li {
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .QB {
@@ -136,11 +133,10 @@ h1, h2, h3 {
   padding: 1em 0;
 }
 
-#showcase {
+.showcase {
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 0px;
-
 }
 
 
@@ -150,21 +146,9 @@ p {
   font-weight: lighter;
 }
 
-
-#section-a {
-  display: flex;
-  justify-content: flex-start;
-  padding-top: 0;
-  margin-bottom: 0px;
-  height:
-  padding-right: 10%;
-}
-
 .projects {
   display: flex;
-  justify-content: space-between;
   padding-left: 10%;
-  padding-right: 10%;
 }
 
 .title {
@@ -173,33 +157,18 @@ p {
 }
 
 .arrow {
-  margin-left: 10px;
+  margin-left: 20px;
   width: 20px;
-}
-
-#section-b {
-  display: flex;
-  justify-content: flex-start;
 }
 
 .image {
   width: 100%
 }
 
-
-.cardContent {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5em;
-}
-
 .cardContent {
   opacity: 0;
   transform: translate(0, 30px);
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .cardContent.visible {
@@ -212,19 +181,29 @@ p {
   cursor: pointer;
   transform: scale(1.05);
   transition-timing-function: ease-in-out;
-  transition-duration: 1s;
+  transition-duration: .6s;
 }
 
 
+.cardContent {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .card-title {
   padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 40px;
   font-size: 20px;
   line-height: 23px;
   weight: 500px;
 }
 
 .lower-title {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   font-size: 18px;
   line-height: 21px;
   color: #a1a1a1;
@@ -236,10 +215,26 @@ p {
   color: #b4b4b4;
 }
 
-#main-footer {
+.main-footer {
   padding-left: 10%;
   padding-right: 10%;
 }
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+
+
+
 
 @media only screen and (min-width: 600px) {
   nav {
@@ -265,28 +260,14 @@ p {
   }
 
 
-  #section-b {
-    display: flex;
-    justify-content: center;
+  .cardContent {
+    width: 50%;
+    padding-left: 10%;
   }
 
-.cardContent {
-  width: 600px;
-}
-/*
-
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 2;
+  .section-a {
+    padding-bottom: 20px;
   }
 
-  .relative {
-    position: relative;
-    top: 20px;
-    left: 20px;
-  }
 
-  .card-content {
-  }
 }
